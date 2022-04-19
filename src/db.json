@@ -1,0 +1,23 @@
+{"wishlist" : [
+{
+    "title": "New York City Trip",
+    "description": "First time in the Big Apple! Looking forward to seeing the Empire State building, Statue of Liberty, Central Park and Madison Square Garden.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/New_york_times_square-terabass.jpg",
+    "location": "New York City, New York.",
+    "geolocation": [40.7128, 74.0060]
+},
+{
+    "title": "Los Angeles Trip",
+    "description": "Coachella, Wooooh!!!!",
+    "image": "https://www.gousa.in/sites/default/files/styles/hero_l/public/images/hero_media_image/2017-01/Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.jpg?itok=lst_2_5d",
+    "location": "Los Angeles, Califonia.",
+    "geolocation": [34.0522, 118.2437]
+},
+{
+    "title": "Zion National Park",
+    "description": "Hiking trip for Big Zion National park, can't wait for Angel's Landing",
+    "image": "https://i.natgeofe.com/n/6eff514d-9275-49e4-9c97-537877315f7d/01-zion-reference.jpg?w=636&h=434",
+    "location": "Zion National Park, Utah.",
+    "geolocation": [37.2982, 113.0263]
+}
+]}
