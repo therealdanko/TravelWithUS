@@ -1,0 +1,9 @@
+.leaflet-container {
+  grid-row: 2/ span 1;
+  grid-column: 1 / span 3;
+  width: 99vw;
+  height: 79vh;
+  margin: auto;
+  border: 3px solid green;
+  padding: 10px;
+}
