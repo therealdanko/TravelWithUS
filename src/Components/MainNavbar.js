@@ -1,19 +1,26 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import './MainNavbar.css'
+import { LinkContainer } from 'react-router-bootstrap'
 
 const MainNavbar = () => {
   return (
     <div>
       <Nav justify variant="tabs" defaultActiveKey="/home">
       <Nav.Item>
-        <Nav.Link href="/home">My Trips</Nav.Link>
+        <LinkContainer to='/'>
+          <Nav.Link>My Trips</Nav.Link>
+        </LinkContainer>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Create New Trip</Nav.Link>
+        <LinkContainer to='/new-trip'>
+          <Nav.Link>Create New Trip</Nav.Link>
+        </LinkContainer>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-2">Resources</Nav.Link>
+      <LinkContainer to='/resources'>
+          <Nav.Link>Resources</Nav.Link>
+        </LinkContainer>
       </Nav.Item>
       </Nav>
 
