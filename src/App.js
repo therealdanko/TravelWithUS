@@ -4,7 +4,7 @@ import MainNavbar from './Components/MainNavbar'
 import NewTripForm from './Pages/TripForm/NewTripForm'
 import MapBox from './Components/MapBox';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <MainNavbar />
