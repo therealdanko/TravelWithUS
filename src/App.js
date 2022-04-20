@@ -1,12 +1,14 @@
 import './App.css';
-import Home from './Pages/Home'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MainNavbar from './Components/MainNavbar'
+import NewTripForm from './Pages/TripForm/NewTripForm'
+import MapBox from './Components/MapBox';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <MainNavbar />
+      <MapBox />
     </div>
   );
 }
-
-export default App;
