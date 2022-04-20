@@ -10,12 +10,12 @@ import './LeafMap.css'
 const LeafMap = () => {
   return (
     <div>
-      <MapContainer center={[51.505, -0.09]} zoom={13} scrollWheelZoom={false}>
+      <MapContainer center={[38.8283, -95.5795]} zoom={4.5} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[51.505, -0.09]}>
+        <Marker position={[38.8283, -95.5795]}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
