@@ -1,0 +1,27 @@
+.resource-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border-radius: 10%;
+    border-bottom: 10%; */
+    /* margin-top: 10vh;
+    flex-wrap: row;
+    text-align: center; */
+    
+  }
+
+  .list-item {
+      display: list-item;
+      list-style: none;
+      
+  }
+
+
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    contain: content;
+}
+
+
