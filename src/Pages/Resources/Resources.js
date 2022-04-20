@@ -1,9 +1,6 @@
 import React from 'react'
-import ResourceItem from './ResourceItem'
-// import Card from 'react-bootstrap/Card'
-// import Button from 'react-bootstrap/Button'
-import { Container } from 'react-bootstrap'
-import { Row } from 'react-bootstrap'
+import ResourceCard from './ResourceCard'
+import ResourceListItem from './ResourceListItem'
 import './Resources.css'
 
 const Resources = () => {
@@ -25,28 +22,76 @@ const Resources = () => {
     image: 'https://images-na.ssl-images-amazon.com/images/I/41NmomGveFL._SX398_BO1,204,203,200_.jpg'
   },
   {
-    title: "The Points Guy",
-    url: 'https://thepointsguy.com/',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/b/bb/TPG.PGN.png'
+    title: "National Geographic Guide to State Parks",
+    url: 'https://www.amazon.com/National-Geographic-Guide-United-States/dp/1426218850/ref=sr_1_2_sspa?keywords=us+national+parks+book&qid=1650492010&s=books&sprefix=us+nat%2Cstripbooks%2C136&sr=1-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyVlMyR0E2WEhPWUJCJmVuY3J5cHRlZElkPUEwODIxNjQwMlU2Q05IRE5TWExVRSZlbmNyeXB0ZWRBZElkPUEwOTYxMzUzRkhRMks2RVQ4U1M2JndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==',
+    image: 'https://images-na.ssl-images-amazon.com/images/I/81ObSE5XdEL.jpg'
   },
   {
-   title: "data",
-   url: 'https://thepointsguy.com/',
-   image: 'https://cdn-bmalj.nitrocdn.com/uirOOtSrYrqqUksKHkiSCjZGZlPeXsmk/assets/static/optimized/rev-0404f4f/images/the-planet-d-logo-2021.svg'
+   title: "The Unique States of America",
+   url: 'https://www.amazon.com/Unique-States-America-Lonely-Planet/dp/1788686411/ref=asc_df_1788686411/?tag=hyprod-20&linkCode=df0&hvadid=366402539474&hvpos=&hvnetw=g&hvrand=15482798951833976256&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9030070&hvtargid=pla-816227104238&psc=1&tag=&ref=&adgrpid=76223197157&hvpone=&hvptwo=&hvadid=366402539474&hvpos=&hvnetw=g&hvrand=15482798951833976256&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9030070&hvtargid=pla-816227104238',
+   image: 'https://images-na.ssl-images-amazon.com/images/I/51hSB7Y1uLL._SX388_BO1,204,203,200_.jpg'
  }
+ ]
+
+ const additionalResources = [
+   {
+     title: "Two Wandering Soles Blog",
+     url: 'https://www.twowanderingsoles.com/usa'
+   },
+   {
+     title: 'Lonely Planet',
+     url: 'https://shop.lonelyplanet.com/categories/usa'
+   },
+   {
+     title: 'Y Travel Blog',
+     url: 'https://www.ytravelblog.com/category/destinations/north-america/usa/'
+   },
+   {
+     title: 'The Blonde Abroad Blog',
+     url: 'https://www.theblondeabroad.com/ultimate-usa-travel-guide/',
+   },
+   {
+     title: 'Visit the USA',
+     url: 'https://www.visittheusa.com/'
+   },
+   {
+     title: 'Town And Tourist',
+     url: 'https://www.townandtourist.com/work-with-us/'
+   }, 
+   {
+     title: 'USA Travel Guides',
+     url: 'https://travel.usnews.com/destinations/USA/'
+   },
+   {
+     title: 'Rough Guides USA',
+     url: 'https://www.roughguides.com/usa/'
+   }
  ]
 
 
   const resourceList = resources.map((resource) => {
-    return <ResourceItem resource={resource} key={resource.title} />
+    return <ResourceCard resource={resource} key={resource.title} />
   })
   console.log(resources)
 
-  return (
-  <Row>
-    {resourceList}
-  </Row>
+  const websiteList = additionalResources.map((resource) => {
+    return <ResourceListItem resource={resource} key={resource.title} />
+  })
 
+  return (
+    <>
+      <div className='resource-container'>
+        {resourceList}
+       
+      </div>
+      <div className='resource-list'>
+          <ul className='resource-list'>
+           {websiteList}
+          </ul>
+        </div>
+      
+    </>
+    
   )
 }
 

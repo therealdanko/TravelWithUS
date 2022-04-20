@@ -1,7 +1,7 @@
 .App {
     display: grid;
     grid-template-columns: 100vw; 
-    grid-template-rows: 10vh 10vh 80vh;
+    grid-template-rows: 10vh 10vh 50vh 30vh;
     overflow-x: hidden; 
     overflow-y: auto;
 }
