@@ -1,8 +1,5 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import MainNavbar from './Components/MainNavbar'
-import NewTripForm from './Pages/TripForm/NewTripForm'
-import MapBox from './Components/MapBox';
 import Resources from './Pages/Resources/Resources'
 import FormPage from './Pages/TripForm/FormPage'
 import Home from './Pages/Home'
