@@ -1,0 +1,36 @@
+.new-trip-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6vh;
+  flex-wrap: row;
+}
+
+.new-trip-form h2 {
+  margin-bottom: 20px;
+}
+
+
+.new-trip-form form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: column;
+  max-width: 500px;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.submit-btn {
+  width: 100px;
+}
+
+.submit-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
