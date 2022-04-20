@@ -1,11 +1,11 @@
-import { Wrapper } from "@googlemaps/react-wrapper";
-import Map from "../Components/Map"
+import MapBox from '../Components/MapBox'
 
-
-const Home = () => (
-    <Wrapper apiKey={"AIzaSyC1m3IlUqJZjoDK4-rmBEr-wQ33r4RKt2k"}>
-      <Map />
-    </Wrapper>
-  );
+const Home = () => {
+  return (
+    <div>
+      <MapBox />
+    </div>
+  )
+};
 
 export default Home;
