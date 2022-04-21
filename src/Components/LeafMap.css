@@ -4,6 +4,17 @@
   width: 99vw;
   height: 79vh;
   margin: auto;
-  border: 3px solid green;
+  /* border: 3px solid #008000; */
+  border-radius: 10px;
   padding: 10px;
+}
+
+.pop-up-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pop-up-container {
+  min-width: 300px;
 }
