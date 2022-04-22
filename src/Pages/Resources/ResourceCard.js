@@ -3,9 +3,6 @@ import Card from 'react-bootstrap/Card'
 
 const ResourceCard = ( { resource } ) => {
 
-    // const goToLink = (e) => {
-    //     return <a href={resource.url}></a>
-    // }
     return (
         <div>
              <Card style={{ width: '15rem' }} >

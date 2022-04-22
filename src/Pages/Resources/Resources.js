@@ -86,6 +86,7 @@ const Resources = () => {
       </div>
       <div className='resource-list'>
           <ul className='resource-list'>
+            <h2>Additional Resources</h2>
            {websiteList}
           </ul>
         </div>
