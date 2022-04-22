@@ -27,6 +27,7 @@ const LeafMap = () => {
       if (place.id !== id) {
         return place
       }
+      return null
     })
     setData(newArray)
   }
