@@ -51,6 +51,97 @@
         -111.887646
       ],
       "id": 4
+    },
+    {
+      "title": "Miami Florida ",
+      "description": "SPRING BREAK!!! WHHHOOOOO! Hope i don't get covid!",
+      "image": "https://s.abcnews.com/images/US/miami-sh-rc-220322_1647959177582_hpEmbed_7x5_992.jpg",
+      "address": "",
+      "city": "Miami",
+      "state": "FL",
+      "geolocation": [
+        25.766368,
+        -80.210268
+      ],
+      "id": 5
+    },
+    {
+      "title": "Snowboarding in Montana",
+      "description": "Gonna shred some gnar gnar and some pow pow at big-sky",
+      "image": "https://www.visitmt.com/binaries/content/gallery/MTOT/photos/winter/2019/mtot_winter20_noahcouser-8247.jpg/mtot_winter20_noahcouser-8247.jpg/MTOT%3Asquare",
+      "address": "",
+      "city": "Big Sky",
+      "state": "MT",
+      "geolocation": [
+        45.26743,
+        -111.3019
+      ],
+      "id": 6
+    },
+    {
+      "title": "Go See Phil",
+      "description": "Gonna go see Phil and go to the aquarium!",
+      "image": "https://ca.slack-edge.com/T02MD9XTF-U01FB6HNSMN-d1127ec62276-72",
+      "address": "",
+      "city": "Monterey",
+      "state": "CA",
+      "geolocation": [
+        36.598828,
+        -121.898426
+      ],
+      "id": 7
+    },
+    {
+      "title": "Go See The Carved Rocks",
+      "description": "Gonna see the old dead dudes faces!",
+      "image": "https://s27363.pcdn.co/wp-content/uploads/2020/10/Mt-Rushmore-Travel-Guide.jpg.optimal.jpg",
+      "address": "",
+      "city": "Keystone",
+      "state": "SD",
+      "geolocation": [
+        43.893774,
+        -103.419512
+      ],
+      "id": 8
+    },
+    {
+      "title": "Mardi Gras",
+      "description": "Get some beads and drink on the street! Hope a hurricane doesn't come. ",
+      "image": "https://media.istockphoto.com/photos/bourbon-street-new-orleans-louisiana-usa-picture-id1143723457?b=1&k=20&m=1143723457&s=170667a&w=0&h=RfqZ8Bm0Gat5ZMh47CpHfRUrYHkLDlMILfc4f5xVOkk=",
+      "address": "",
+      "city": "New Orleans",
+      "state": "LA",
+      "geolocation": [
+        30.056708,
+        -89.889852
+      ],
+      "id": 9
+    },
+    {
+      "title": "Nashville! ",
+      "description": "Love to see me some cowboys playing the gee-tar! ",
+      "image": "https://i.pinimg.com/736x/49/7b/4d/497b4d772baf399c923242f35a44177d--cowboy-burger-bachelorette-weekend.jpg",
+      "address": "",
+      "city": "Nashville",
+      "state": "TN",
+      "geolocation": [
+        36.236907,
+        -86.834683
+      ],
+      "id": 10
+    },
+    {
+      "title": "Antartica!",
+      "description": "Gonna see some penguins!",
+      "image": "https://media.defense.gov/2018/Jan/08/2001863682/-1/-1/0/171214-F-XX000-027.JPG",
+      "address": "",
+      "city": "mcmurdo station",
+      "state": "",
+      "geolocation": [
+        -77.846,
+        166.676
+      ],
+      "id": 11
     }
   ]
 }

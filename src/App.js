@@ -15,7 +15,7 @@ export default function App() {
       <Routes>
         <Route exact path='/' element={<Home />} />
         <Route path='/new-trip' element={<FormPage/>}/>
-        <Route path="resources" element={<Resources />} />
+        <Route path="resources" element={<Resources />}/>
       </Routes>
     </div>
   );
