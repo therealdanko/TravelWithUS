@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 
 const ACCESS_KEY = `7e5f49dd5b022af0fced2ae06bcee965`
 const states = [ '-','AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ];
-const URL = `http://localhost:8000/places/`
+const URL = `https://api-travel-backend-data.herokuapp.com/places/`
 
 
 const formDefault = {
@@ -39,25 +39,6 @@ const handleSubmit = (e) => {
     getLatLong(tripInfo)
     
   }
-  
-  // const postData = (input) => {
-  //   fetch(`http://api.positionstack.com/v1/forward?access_key=${ACCESS_KEY}&query=${input.address}, ${input.city} ${input.state}`)
-  //   .then(r => r.json())
-  //   .then(response => {
-  //     setTripInfo({...tripInfo, geolocation: [response.data[0].latitude, response.data[0].longitude]})
-  //     // POST to server
-  //     fetch(URL, {
-  //       method: 'POST',
-  //       headers: {"Content-Type": "application/json"},
-  //       body: JSON.stringify(tripInfo)
-  //     })
-  //     .then(response => response.json())
-  //     .then(console.log)
-  //     setTripInfo(formDefault)
-  //     // navigate back my trips
-  //   })
-
-  // }
 
   const navigate = useNavigate()
   const postToServer = (geo) => {
@@ -67,9 +48,10 @@ const handleSubmit = (e) => {
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(geo)
           })
-          .then(response => response.json())
-          // navigate back my trips
-          navigate('/')
+          .then(response => {
+            response.json()
+            navigate('/')
+          })
   }
 
   const getLatLong = async (input) => {
