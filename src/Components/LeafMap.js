@@ -6,7 +6,7 @@ import {Popup} from 'react-leaflet/Popup'
 import './LeafMap.css'
 import Button from '@mui/material/Button';
 
-const URL = `https://api-travel-backend-data.herokuapp.com/places/`
+const URL = process.env.REACT_APP_PLACES_API_URL
 
 
 const LeafMap = () => {

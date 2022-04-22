@@ -9,9 +9,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl'
 import Button from '@mui/material/Button';
 
-const ACCESS_KEY = `7e5f49dd5b022af0fced2ae06bcee965`
+const ACCESS_KEY = process.env.REACT_APP_ACCESS_KEY
 const states = [ '-','AL', 'AK', 'AS', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'DC', 'FM', 'FL', 'GA', 'GU', 'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MH', 'MD', 'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 'NM', 'NY', 'NC', 'ND', 'MP', 'OH', 'OK', 'OR', 'PW', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VT', 'VI', 'VA', 'WA', 'WV', 'WI', 'WY' ];
-const URL = `https://api-travel-backend-data.herokuapp.com/places/`
+const URL = process.env.REACT_APP_PLACES_API_URL
 
 
 const formDefault = {
